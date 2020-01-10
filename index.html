@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Flexbox Play</title>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <title>FlexPlay</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../index.css">
 </head>
 
 <body>
   <section class='container'>
     <div class='row'>
-      <h3>Rows</h3>
+      <h3>1 Row</h3>
     </div>
-    <div id='row-group'>
+    <div id='row-group-1'>
+      <div class='badge-group'>
+        <span class=''>flex-direction:</span>
+        <button class='badge badge-primary'>row</button>
+        <button class='badge badge-secondary'>row-reverse</button>
+      </div>
+      <div class='badge-group'>
+        <span class=''>justify-content:</span>
+        <button class='badge badge-primary'>center</button>
+        <button class='badge badge-secondary'>flex-start</button>
+        <button class='badge badge-secondary'>flex-end</button>
+        <button class='badge badge-secondary'>space-around</button>
+        <button class='badge badge-secondary'>space-between</button>
+      </div>
+      <div class='badge-group'>
+        <span class=''>align-items:</span>
+        <button class='badge badge-primary'>center</button>
+        <button class='badge badge-secondary'>flex-start</button>
+        <button class='badge badge-secondary'>flex-end</button>
+        <button class='badge badge-secondary'>stretch</button>
+        <button class='badge badge-secondary'>baseline</button>
+      </div>
+    </div>
+    <div id='1-row-test-area' class="row-test-area"
+      style='height: 40vh; width: 100%; justify-content: center; align-items: center;'>
+      <div class='box1-row'>1</div>
+      <div class='box2-row'>2</div>
+      <div class='box3-row'>3</div>
+      <div class='box4-row'>4</div>
+      <div class='box5-row'>5</div>
+    </div>
+  </section>
+
+  <section class='container'>
+    <div class='row'>
+      <h3>Multi Row</h3>
+    </div>
+    <div id='row-group-m'>
       <div class='badge-group'>
         <span class=''>flex-direction:</span>
         <button class='badge badge-primary'>row</button>
@@ -36,37 +73,33 @@
       </div>
       <div class='badge-group'>
         <span class=''>align-content:</span>
-        <button class='badge badge-light'>center</button>
-        <button class='badge badge-light'>flex-start</button>
-        <button class='badge badge-light'>flex-end</button>
-        <button class='badge badge-light'>stretch</button>
-        <button class='badge badge-light'>space-around</button>
-        <button class='badge badge-light'>space-between</button>
-      </div>
-      <div class='badge-group'>
-        <span class=''>justify-items:</span>
-        <button class='badge badge-light'>center</button>
-        <button class='badge badge-light'>flex-start</button>
-        <button class='badge badge-light'>flex-end</button>
-        <button class='badge badge-light'>stretch</button>
-        <button class='badge badge-light'>space-around</button>
-        <button class='badge badge-light'>space-between</button>
+        <button class='badge badge-primary'>center</button>
+        <button class='badge badge-secondary'>flex-start</button>
+        <button class='badge badge-secondary'>flex-end</button>
+        <button class='badge badge-secondary'>stretch</button>
+        <button class='badge badge-secondary'>space-around</button>
+        <button class='badge badge-secondary'>space-between</button>
       </div>
     </div>
-    <div id='row-test-area' class="flex-row" style='height: 20vh;'>
-      <div>BOX 1</div>
-      <div>BOX 2</div>
-      <div>BOX 3</div>
-      <div>BOX 4</div>
-      <div>BOX 5</div>
+    <div id='m-row-test-area' class="row-test-area"
+      style='height: 40vh; width: 100%; justify-content: center; align-items: center;'>
+      <div class='box1-col'>1</div>
+      <div class='box2-col'>2</div>
+      <div class='box3-col'>3</div>
+      <div class='box4-col'>4</div>
+      <div class='box5-col'>5</div>
+      <div class='box1-col'>6</div>
+      <div class='box2-col'>7</div>
+      <div class='box3-col'>8</div>
+      <div class='box4-col'>9</div>
     </div>
-
   </section>
+
   <section class='container'>
-    <div class='row'>
-      <h3>Columns</h3>
+    <div class='column'>
+      <h3>1 Column</h3>
     </div>
-    <div id='column-group'>
+    <div id='column-group-1'>
       <div class='badge-group'>
         <span class=''>flex-direction:</span>
         <button class='badge badge-primary'>row</button>
@@ -74,19 +107,56 @@
       </div>
       <div class='badge-group'>
         <span class=''>justify-content:</span>
-        <button class='badge badge-light'>center</button>
-        <button class='badge badge-light'>flex-start</button>
-        <button class='badge badge-light'>flex-end</button>
-        <button class='badge badge-light'>space-around</button>
-        <button class='badge badge-light'>space-between</button>
+        <button class='badge badge-primary'>center</button>
+        <button class='badge badge-secondary'>flex-start</button>
+        <button class='badge badge-secondary'>flex-end</button>
+        <button class='badge badge-secondary'>space-around</button>
+        <button class='badge badge-secondary'>space-between</button>
       </div>
       <div class='badge-group'>
         <span class=''>align-items:</span>
-        <button class='badge badge-light'>center</button>
-        <button class='badge badge-light'>flex-start</button>
-        <button class='badge badge-light'>flex-end</button>
-        <button class='badge badge-light'>stretch</button>
-        <button class='badge badge-light'>baseline</button>
+        <button class='badge badge-primary'>center</button>
+        <button class='badge badge-secondary'>flex-start</button>
+        <button class='badge badge-secondary'>flex-end</button>
+        <button class='badge badge-secondary'>stretch</button>
+        <button class='badge badge-secondary'>baseline</button>
+      </div>
+    </div>
+    <div id='1-col-test-area' class="col-test-area"
+      style='height: 40vh; width: 100%; justify-content: center; align-items: center;'>
+      <div class='box1-col'>1</div>
+      <div class='box2-col'>2</div>
+      <div class='box3-col'>3</div>
+      <div class='box4-col'>4</div>
+      <div class='box5-col'>5</div>
+    </div>
+  </section>
+
+  <section class='container'>
+    <div class='column'>
+      <h3>Multi Column</h3>
+    </div>
+    <div id='column-group-m'>
+      <div class='badge-group'>
+        <span class=''>flex-direction:</span>
+        <button class='badge badge-primary'>row</button>
+        <button class='badge badge-secondary'>row-reverse</button>
+      </div>
+      <div class='badge-group'>
+        <span class=''>justify-content:</span>
+        <button class='badge badge-primary'>center</button>
+        <button class='badge badge-secondary'>flex-start</button>
+        <button class='badge badge-secondary'>flex-end</button>
+        <button class='badge badge-secondary'>space-around</button>
+        <button class='badge badge-secondary'>space-between</button>
+      </div>
+      <div class='badge-group'>
+        <span class=''>align-items:</span>
+        <button class='badge badge-primary'>center</button>
+        <button class='badge badge-secondary'>flex-start</button>
+        <button class='badge badge-secondary'>flex-end</button>
+        <button class='badge badge-secondary'>stretch</button>
+        <button class='badge badge-secondary'>baseline</button>
       </div>
       <div class='badge-group'>
         <span class=''>align-content:</span>
@@ -97,61 +167,57 @@
         <button class='badge badge-secondary'>space-around</button>
         <button class='badge badge-secondary'>space-between</button>
       </div>
-      <div class='badge-group'>
-        <span class=''>justify-items:</span>
-        <button class='badge badge-primary'>center</button>
-        <button class='badge badge-secondary'>flex-start</button>
-        <button class='badge badge-secondary'>flex-end</button>
-        <button class='badge badge-secondary'>stretch</button>
-        <button class='badge badge-secondary'>space-around</button>
-        <button class='badge badge-secondary'>space-between</button>
-      </div>
+
     </div>
-    <div id='col-test-area' class="flex-row" style='height: 20vh;'>
-      <div>BOX 1</div>
-      <div>BOX 2</div>
-      <div>BOX 3</div>
-      <div>BOX 4</div>
-      <div>BOX 5</div>
+    <div id='m-col-test-area' class="col-test-area"
+      style='height: 40vh; width: 100%; justify-content: center; align-items: center;'>
+      <div class='box1-col'>1</div>
+      <div class='box2-col'>2</div>
+      <div class='box3-col'>3</div>
+      <div class='box4-col'>4</div>
+      <div class='box5-col'>5</div>
+      <div class='box1-col'>6</div>
+      <div class='box2-col'>7</div>
+      <div class='box3-col'>8</div>
+      <div class='box4-col'>9</div>
     </div>
   </section>
 </body>
 
 <footer>
   <script>
-    // 1 = flex-direction
-    // 2 = justify-content
-    // 3 = align-items
-    // 4 = align-content
-    // 5 = justify-items
-    var group = document.getElementById('row-group');
-    console.log('group', group)
-    group.onclick = function (event) {
-      // Assign test area property
-      let group = 'row';
-      let testArea = document.getElementById('test-area');
+    var rowGroup1 = document.getElementById('row-group-1');
+    var colGroup1 = document.getElementById('column-group-1');
+    var rowGroupM = document.getElementById('row-group-m');
+    var colGroupM = document.getElementById('column-group-m');
+
+    rowGroup1.onclick = function (event) { assignClick(event, '1-row') };
+    colGroup1.onclick = function (event) { assignClick(event, '1-col') };
+    rowGroupM.onclick = function (event) { assignClick(event, 'm-row') };
+    colGroupM.onclick = function (event) { assignClick(event, 'm-col') };
+    function assignClick(event, type) {
       let target = event.target;
       if (target.tagName !== 'BUTTON') return;
-      console.log('target', target);
       let parent = target.parentNode;
       let childList = parent.children;
-      let type = childList[0].innerHTML.slice(0, -1);
-      console.log('type', type);
+      let styleType = childList[0].innerHTML.slice(0, -1);
       let value = target.innerHTML;
-      console.log('value', value);
-      testArea.style[type] = value;
-      // Control colors
+      let testArea = document.getElementById(`${type}-test-area`);
+      testArea.style[styleType] = value;
       assignBadges(childList, target);
     }
     function assignBadges(list, target) {
       for (let i = 0; i < list.length; i++) {
+        // console.log('list[i]', list[i])
+        // console.log('target', target)
+        // console.log('list[i]===target', list[i] === target, 'i =', i)
         if (i === 0) {
         } else if (list[i] === target) {
-          target.classList.remove('badge-secondary')
-          target.classList.add('badge-primary')
-        } else if (target.classList[1] === 'badge-primary') {
-          target.classList.add('badge-secondary')
-          target.classList.remove('badge-primary')
+          list[i].classList.remove('badge-secondary')
+          list[i].classList.add('badge-primary')
+        } else if (list[i] !== target) {
+          list[i].classList.add('badge-secondary')
+          list[i].classList.remove('badge-primary')
         }
       }
     }

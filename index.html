@@ -4,10 +4,10 @@
   <title>FlexPlay</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../index.css">
+  <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
-<body>
+<body onload='startStyles()'>
   <section class='container'>
     <div class='row'>
       <h3>1 Row</h3>
@@ -195,6 +195,15 @@
     colGroup1.onclick = function (event) { assignClick(event, '1-col') };
     rowGroupM.onclick = function (event) { assignClick(event, 'm-row') };
     colGroupM.onclick = function (event) { assignClick(event, 'm-col') };
+    function startStyles(arg = ['1-row', 'm-row', '1-col', 'm-col']) {
+      for (let i = 0; i < arg.length; i++) {
+        let testArea = document.getElementById(`${arg[i]}-test-area`);
+        testArea.style.height = '40vh';
+        testArea.style.width = '100%';
+        testArea.style.justifyContent = 'center';
+        testArea.style.alignItems = 'center';
+      }
+    }
     function assignClick(event, type) {
       let target = event.target;
       if (target.tagName !== 'BUTTON') return;

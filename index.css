@@ -25,3 +25,7 @@ div[class^="box"] {
   border-radius: 5px;
   background-color: lightseagreen;
 }
+
+section p {
+  display: inline;
+}

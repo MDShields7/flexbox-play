@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
-<body onload='startStyles()'>
+<body onload='startUp()'>
   <section class='container'>
     <div class='column'>
       <h1>Flex Play</h1>
@@ -198,12 +198,16 @@
     var colGroup1 = document.getElementById('column-group-1');
     var rowGroupM = document.getElementById('row-group-m');
     var colGroupM = document.getElementById('column-group-m');
+    var spans = document.getElementsByTagName('SPAN');
 
     rowGroup1.onclick = function (event) { assignClick(event, '1-row') };
     colGroup1.onclick = function (event) { assignClick(event, '1-col') };
     rowGroupM.onclick = function (event) { assignClick(event, 'm-row') };
     colGroupM.onclick = function (event) { assignClick(event, 'm-col') };
-    function startStyles(arg = ['1-row', 'm-row', '1-col', 'm-col']) {
+    function startUp(){
+      setAreaStyles();
+    }
+    function setAreaStyles(arg = ['1-row', 'm-row', '1-col', 'm-col']) {
       for (let i = 0; i < arg.length; i++) {
         let testArea = document.getElementById(`${arg[i]}-test-area`);
         testArea.style.height = '40vh';

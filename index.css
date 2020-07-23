@@ -29,3 +29,7 @@ div[class^="box"] {
 section p {
   display: inline;
 }
+
+span {
+  cursor: pointer;
+}
